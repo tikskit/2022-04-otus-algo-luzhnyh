@@ -22,5 +22,7 @@ public class LuckyTicketCounterJuniorN3Test {
         LuckyTicketCounter counter = new LuckyTicketCounterJuniorN3();
         long actual = counter.calc(3);
         assertThat(actual).isEqualTo(expected);
+
+        System.out.println("Ответ:" + actual);
     }
 }
