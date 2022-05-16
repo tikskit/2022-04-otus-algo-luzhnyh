@@ -15,8 +15,8 @@ public class LuckyTicketCounterRecursion implements LuckyTicketCounter {
      * @return количество счастливых билетов
      */
     private long calcLeft(int maxDigitsCount, int curDigitInd, int leftCurSum) {
-        long res = 0;
         if (curDigitInd < maxDigitsCount) {
+            long res = 0;
             for (int n = 0; n <= 9; n++) {
                 res += calcLeft(maxDigitsCount, curDigitInd + 1, leftCurSum + n);
             }
