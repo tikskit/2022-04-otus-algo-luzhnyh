@@ -11,7 +11,7 @@ public class LuckyTicketCounterRecursion implements LuckyTicketCounter {
      *
      * @param maxDigitsCount максимальное количество цифр с каждой стороны
      * @param curDigitInd индекс текущей цифры [0..maxDigitsCount - 1]
-     * @param leftCurSum сумма цифр слева для curDigitInd цифр
+     * @param leftCurSum сумма цифр слева для curDigitInd-1 цифр
      * @return количество счастливых билетов
      */
     private long calcLeft(int maxDigitsCount, int curDigitInd, int leftCurSum) {
@@ -31,7 +31,7 @@ public class LuckyTicketCounterRecursion implements LuckyTicketCounter {
      * @param maxDigitsCount максимальное количество цифр с каждой стороны
      * @param curDigitInd индекс текущей цифры [0..maxDigitsCount - 1]
      * @param leftSum сумма слева, на равенство которой проверяется сумма справа
-     * @param rightCurSum сумма справа для curDigitInd цифр
+     * @param rightCurSum сумма справа для curDigitInd-1 цифр
      * @return количество счастливых билетов
      */
     private long calcRight(int maxDigitsCount, int curDigitInd, int leftSum, int rightCurSum) {
